@@ -63,7 +63,7 @@ jobs:
       - name: Prepare files to deploy
         run: |
           mkdir _site
-          cp -r test_analysis_files test_analysis.html _site/
+          cp -r test_analysis_files test_analysis.html mtcars.rds _site/
           
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3

@@ -57,13 +57,13 @@ jobs:
         
       - name: Render site
         run: |
-          rmarkdown::render(input = "test_analysis.Rmd")
+          rmarkdown::render(input = "test_analysis.Rmd", clean = FALSE)
         shell: Rscript {0}
 
       - name: Prepare files to deploy
         run: |
           mkdir _site
-          cp -r test_analysis.html _site/
+          cp -r test_analysis_files test_analysis.html _site/
           
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3

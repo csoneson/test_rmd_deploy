@@ -63,12 +63,12 @@ jobs:
       - name: Prepare files to deploy
         run: |
           mkdir _site
-          cp -r libs test_analysis.html _site/
+          cp -r test_analysis.html _site/
           
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
           FOLDER: _site
 

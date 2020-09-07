@@ -376,48 +376,51 @@ summary {
 ##   &quot;resources&quot;: {
 ##     &quot;core&quot;: {
 ##       &quot;limit&quot;: 1000,
-##       &quot;used&quot;: 2,
-##       &quot;remaining&quot;: 998,
-##       &quot;reset&quot;: 1599464723
+##       &quot;used&quot;: 0,
+##       &quot;remaining&quot;: 1000,
+##       &quot;reset&quot;: 1599469920
 ##     },
 ##     &quot;search&quot;: {
 ##       &quot;limit&quot;: 30,
 ##       &quot;used&quot;: 0,
 ##       &quot;remaining&quot;: 30,
-##       &quot;reset&quot;: 1599461377
+##       &quot;reset&quot;: 1599466380
 ##     },
 ##     &quot;graphql&quot;: {
 ##       &quot;limit&quot;: 1000,
 ##       &quot;used&quot;: 0,
 ##       &quot;remaining&quot;: 1000,
-##       &quot;reset&quot;: 1599464917
+##       &quot;reset&quot;: 1599469920
 ##     },
 ##     &quot;integration_manifest&quot;: {
 ##       &quot;limit&quot;: 5000,
 ##       &quot;used&quot;: 0,
 ##       &quot;remaining&quot;: 5000,
-##       &quot;reset&quot;: 1599464917
+##       &quot;reset&quot;: 1599469920
 ##     },
 ##     &quot;source_import&quot;: {
 ##       &quot;limit&quot;: 100,
 ##       &quot;used&quot;: 0,
 ##       &quot;remaining&quot;: 100,
-##       &quot;reset&quot;: 1599461377
+##       &quot;reset&quot;: 1599466380
 ##     },
 ##     &quot;code_scanning_upload&quot;: {
 ##       &quot;limit&quot;: 500,
 ##       &quot;used&quot;: 0,
 ##       &quot;remaining&quot;: 500,
-##       &quot;reset&quot;: 1599464917
+##       &quot;reset&quot;: 1599469920
 ##     }
 ##   },
 ##   &quot;rate&quot;: {
 ##     &quot;limit&quot;: 1000,
-##     &quot;used&quot;: 2,
-##     &quot;remaining&quot;: 998,
-##     &quot;reset&quot;: 1599464723
+##     &quot;used&quot;: 0,
+##     &quot;remaining&quot;: 1000,
+##     &quot;reset&quot;: 1599469920
 ##   }
 ## }</code></pre>
+<pre class="r"><code>papers &lt;- readRDS(gzcon(url(&quot;https://github.com/openjournals/joss-analytics/blob/gh-pages/joss_submission_analytics.rds?raw=true&quot;)))
+dim(papers)</code></pre>
+<pre><code>## [1] 1000   57</code></pre>
 <div id="r-markdown" class="section level2">
 <h2>R Markdown</h2>
 <p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
@@ -481,7 +484,7 @@ summary {
 ## [21] digest_0.6.25    tibble_3.0.3     lifecycle_0.2.0  crayon_1.3.4    
 ## [25] purrr_0.3.4      vctrs_0.3.4      curl_4.3         glue_1.4.2      
 ## [29] evaluate_0.14    rmarkdown_2.3    stringi_1.4.6    compiler_4.0.2  
-## [33] pillar_1.4.6     generics_0.0.2   scales_1.1.1     jsonlite_1.7.0  
+## [33] pillar_1.4.6     generics_0.0.2   scales_1.1.1     jsonlite_1.7.1  
 ## [37] pkgconfig_2.0.3</code></pre>
 </div>
 

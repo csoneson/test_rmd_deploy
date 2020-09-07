@@ -369,7 +369,55 @@ summary {
 <pre class="r"><code>suppressPackageStartupMessages({
   library(dplyr)
   library(ggplot2)
+  library(gh)
 })</code></pre>
+<pre class="r"><code>gh(&quot;/rate_limit&quot;)</code></pre>
+<pre><code>## {
+##   &quot;resources&quot;: {
+##     &quot;core&quot;: {
+##       &quot;limit&quot;: 1000,
+##       &quot;used&quot;: 2,
+##       &quot;remaining&quot;: 998,
+##       &quot;reset&quot;: 1599464723
+##     },
+##     &quot;search&quot;: {
+##       &quot;limit&quot;: 30,
+##       &quot;used&quot;: 0,
+##       &quot;remaining&quot;: 30,
+##       &quot;reset&quot;: 1599461377
+##     },
+##     &quot;graphql&quot;: {
+##       &quot;limit&quot;: 1000,
+##       &quot;used&quot;: 0,
+##       &quot;remaining&quot;: 1000,
+##       &quot;reset&quot;: 1599464917
+##     },
+##     &quot;integration_manifest&quot;: {
+##       &quot;limit&quot;: 5000,
+##       &quot;used&quot;: 0,
+##       &quot;remaining&quot;: 5000,
+##       &quot;reset&quot;: 1599464917
+##     },
+##     &quot;source_import&quot;: {
+##       &quot;limit&quot;: 100,
+##       &quot;used&quot;: 0,
+##       &quot;remaining&quot;: 100,
+##       &quot;reset&quot;: 1599461377
+##     },
+##     &quot;code_scanning_upload&quot;: {
+##       &quot;limit&quot;: 500,
+##       &quot;used&quot;: 0,
+##       &quot;remaining&quot;: 500,
+##       &quot;reset&quot;: 1599464917
+##     }
+##   },
+##   &quot;rate&quot;: {
+##     &quot;limit&quot;: 1000,
+##     &quot;used&quot;: 2,
+##     &quot;remaining&quot;: 998,
+##     &quot;reset&quot;: 1599464723
+##   }
+## }</code></pre>
 <div id="r-markdown" class="section level2">
 <h2>R Markdown</h2>
 <p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
@@ -422,17 +470,19 @@ summary {
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-## [1] ggplot2_3.3.2 dplyr_1.0.0  
+## [1] gh_1.1.0      ggplot2_3.3.2 dplyr_1.0.2  
 ## 
 ## loaded via a namespace (and not attached):
 ##  [1] knitr_1.29       magrittr_1.5     munsell_0.5.0    tidyselect_1.1.0
-##  [5] colorspace_1.4-1 R6_2.4.1         rlang_0.4.7      stringr_1.4.0   
-##  [9] tools_4.0.2      grid_4.0.2       gtable_0.3.0     xfun_0.15       
-## [13] withr_2.2.0      htmltools_0.5.0  ellipsis_0.3.1   yaml_2.2.1      
-## [17] digest_0.6.25    tibble_3.0.3     lifecycle_0.2.0  crayon_1.3.4    
-## [21] purrr_0.3.4      vctrs_0.3.2      glue_1.4.1       evaluate_0.14   
-## [25] rmarkdown_2.3    stringi_1.4.6    compiler_4.0.2   pillar_1.4.6    
-## [29] generics_0.0.2   scales_1.1.1     pkgconfig_2.0.3</code></pre>
+##  [5] colorspace_1.4-1 R6_2.4.1         rlang_0.4.7      fansi_0.4.1     
+##  [9] httr_1.4.2       stringr_1.4.0    tools_4.0.2      grid_4.0.2      
+## [13] gtable_0.3.0     xfun_0.16        cli_2.0.2        withr_2.2.0     
+## [17] htmltools_0.5.0  ellipsis_0.3.1   assertthat_0.2.1 yaml_2.2.1      
+## [21] digest_0.6.25    tibble_3.0.3     lifecycle_0.2.0  crayon_1.3.4    
+## [25] purrr_0.3.4      vctrs_0.3.4      curl_4.3         glue_1.4.2      
+## [29] evaluate_0.14    rmarkdown_2.3    stringi_1.4.6    compiler_4.0.2  
+## [33] pillar_1.4.6     generics_0.0.2   scales_1.1.1     jsonlite_1.7.0  
+## [37] pkgconfig_2.0.3</code></pre>
 </div>
 
 

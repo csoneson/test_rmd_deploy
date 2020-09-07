@@ -17,7 +17,6 @@ suppressPackageStartupMessages({
 
 ```{r}
 gh("/rate_limit")
-gh("/user")
 ```
 
 ## R Markdown
